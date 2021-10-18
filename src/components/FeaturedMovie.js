@@ -5,6 +5,10 @@ import './FeaturedMovie.css'
 export default ({item}) => {
 
     let firstDate = new Date(item.first_air_date);
+    let genres = [];
+    for(let i in item.genres){
+        genres.push(item.genres[i].name);
+    }
     return(
         <section className="featured" style={{
             backgroundSize: 'cover',
@@ -21,9 +25,10 @@ export default ({item}) => {
                     </div>
                     <div className="featured--description">{item.overview}</div>
                     <div className="featured--buttons">
-
+                        <a href={`/watch/${item.id}`} className="featured--watchbutton">► Assistir</a>
+                        <a href={`/list/add/${item.id}`} className="featured--mylistbutton">+ Minha Lista</a>
                     </div>
-                    <div className="featured==genres"><strong>Gêneros</strong>...</div>
+                    <div className="featured--genres"><strong>Gêneros: </strong>{genres.join(', ')}</div>
                 </div>
             </div>
         </section>
