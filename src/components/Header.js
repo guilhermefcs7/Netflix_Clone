@@ -16,5 +16,5 @@ export default ({black}) => {
                 </a>
             </div>
         </header>
-    )
+    );
 }

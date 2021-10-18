@@ -64,6 +64,10 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <footer>
+      <span style={{color: '#F8D210',fontWeight:'bold'}}>©2021 Netflix Clone for studies. </span> <br/> All rights reserved to Netflix | All data rights reserved to Themoviedb.org  <br/> Made by Guilherme Falcão | Github: guilhermefcs7 <br/> 
+      </footer>
     </div>
   )
 }

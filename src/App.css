@@ -12,3 +12,8 @@ body {
 .lists {
     margin-top: -200px;
 }
+
+footer {
+    margin: 50px 0;
+    text-align: center;
+}
