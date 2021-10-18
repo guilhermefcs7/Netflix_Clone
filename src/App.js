@@ -5,12 +5,14 @@ import './App.css'
 
 import MovieRow from './components/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie';
+import Header from './components/Header';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 
   const [movieList, setMovieList] = useState([]);
-  const [featuredData, setFeaturedData] = useState(null)
+  const [featuredData, setFeaturedData] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(false);
 
   useEffect(()=>{
     const loadAll = async () => {
@@ -31,8 +33,25 @@ export default () => {
   
   }, []);
 
+  useEffect(()=> {
+    const scrollListener = () => {
+      if (window.scrollY > 10) {
+        setBlackHeader(true);
+      }else{
+        setBlackHeader(false);
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener);
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    }
+  },[])
+
   return(
     <div className="page">
+
+      <Header black={blackHeader}/>
 
     {
       featuredData &&
