@@ -8,6 +8,11 @@
 .Css => <br/>
   .Media query (mobile adaptation)
 <h2/>
+  
+# Application Operation
+ ![1](https://user-images.githubusercontent.com/79313483/137827163-1bde0183-cbc2-49fe-adfd-9c17e183a343.gif)
+
+![2](https://user-images.githubusercontent.com/79313483/137827171-3d346091-da3f-409c-bd72-353839c443d0.gif)
 
 
 
