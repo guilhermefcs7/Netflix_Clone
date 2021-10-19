@@ -1,7 +1,6 @@
 # Code Workspace:
 <h2>
 .React => <br/>
-  .Hooks <br/>
   .Await/ Async (consuming Api)
   <br/>
 .Css => <br/>
