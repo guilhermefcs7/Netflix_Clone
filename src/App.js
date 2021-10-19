@@ -20,6 +20,7 @@ export default () => {
     //pegando a lista total
     let list = await Tmdb.getHomeList();
     setMovieList(list);
+    console.log(list)
 
     // pegando o featured
     let originals = list.filter(i=>i.slug === 'originals');
