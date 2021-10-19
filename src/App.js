@@ -68,6 +68,13 @@ export default () => {
       <footer>
       <span style={{color: '#F8D210',fontWeight:'bold'}}>©2021 Netflix Clone for studies. </span> <br/> All rights reserved to Netflix | All data rights reserved to Themoviedb.org  <br/> Made by Guilherme Falcão | Github: guilhermefcs7 <br/> 
       </footer>
+    
+      {movieList.length <=0 &&
+      
+      <div className="loading">
+          <img src="https://c.tenor.com/Rfyx9OkRI38AAAAC/netflix-netflix-startup.gif" alt="Carregando"/>
+      </div>
+      } 
     </div>
   )
 }
