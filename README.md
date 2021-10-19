@@ -2,7 +2,7 @@
 <h2>
 .React => <br/>
   .Hooks <br/>
-  .Axios (consuming Api)
+  .Await/ Async (consuming Api)
   <br/>
 .Css => <br/>
   .Media query (mobile adaptation)
