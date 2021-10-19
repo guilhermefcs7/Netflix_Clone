@@ -4,6 +4,8 @@
   .Styled Componets <br/>
   .Hooks <br/>
   .Axios (consuming Api)
+.Css => <br/>
+  .Media query (mobile adaptation)
 <h2/>
 
 
